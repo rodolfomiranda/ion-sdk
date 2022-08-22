@@ -4,14 +4,16 @@
   "description": "TypeScript SDK for ION",
   "repository": "https://github.com/decentralized-identity/ion-sdk",
   "license": "Apache-2.0",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "dependencies": {
     "@transmute/ed25519-key-pair": "0.7.0-unstable.28",
     "@transmute/jose-ld": "0.7.0-unstable.28",
     "@transmute/secp256k1-key-pair": "0.7.0-unstable.28",
+    "@types/crypto-js": "^4.1.1",
     "@waiting/base64": "4.2.9",
     "canonicalize": "1.0.1",
+    "crypto-js": "^4.1.1",
     "multihashes": "0.4.14",
     "randombytes": "2.1.0",
     "uri-js": "4.4.0"

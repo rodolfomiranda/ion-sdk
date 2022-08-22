@@ -32,7 +32,8 @@ export default class Multihash {
     let hash;
     switch (hashAlgorithmInMultihashCode) {
       case 18: // SHA256
-        hash = crypto.createHash('sha256').update(content).digest();
+        // hash = crypto.createHash('sha256').update(content).digest();
+        hash = crypto.SHA256(content.toString());
         break;
       default:
         throw new IonError(
@@ -41,7 +42,7 @@ export default class Multihash {
         );
     }
 
-    return hash;
+    return Buffer.from(hash.toString());
   }
 
   /**
